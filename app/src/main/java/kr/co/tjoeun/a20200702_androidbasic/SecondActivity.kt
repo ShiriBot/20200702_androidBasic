@@ -18,6 +18,15 @@ class SecondActivity : AppCompatActivity() {
 
         receivedMessageTxt.text=receivedMassage
 
+//        첨부된 Int 데이터를 변수에 저장.
+//        만약 첨부가 안되었다면 -1을 대신 집어넣자.
+//        JAVA의 기본형 변수(null값이 안됨)를 받을 때만 필요한 작업.
+        val recNum = intent.getIntExtra("number",-1)
+//        받은 데이터: 1234 등 숫자.
+//        세팅할 내용 => "고유번호 : 1234" 등 가공된 String
+        numberTxt.text="고유번호: ${recNum}"
+
+
 
     }
 }
