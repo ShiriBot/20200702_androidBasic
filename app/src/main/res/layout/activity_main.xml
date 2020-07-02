@@ -5,8 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     android:padding="15dp"
     tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="메인화면"
+        />
 
     <Button
         android:id="@+id/moveToFirstBtn"
@@ -14,6 +23,19 @@
         android:layout_height="wrap_content"
         android:text="첫번째페이지로"
         />
+
+    <EditText
+        android:id="@+id/messageEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="전달할 내용입력"
+        android:singleLine="true"/>
+
+    <Button
+        android:id="@+id/sendToSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="두번째 화면으로 입력값 전달"/>
 
 
 </LinearLayout>
